@@ -4,7 +4,7 @@
 
 Скрипт monitoring.sh надо разместить в /usr/local/bin/monitoring.sh либо сделать на него симлинк.
 Далее Systemd сервис monitoring.service надо разместить в /etc/systemd/system/monitoring.service либо сделать на него симлинк.
-Скрипт запускается командой 'sudo systemctl stop monitoring.service'.
+Скрипт запускается командой `sudo systemctl stop monitoring.service`.
 
 Что делает скрипт:
 - Мониторит процесса test в среде linux
@@ -21,8 +21,8 @@
 Для имитации работы сервера мониторинга можно использовать скрипт на Python из папки web-mon-server.
 
 ## Запуск web-mon-server
-Скрипт web-mon-server требует наличия следующих библиотек: 'flask', 'flask-sslify'.
-Для развертывания нужной среды можно использовать 'pipenv':
+Скрипт web-mon-server требует наличия следующих библиотек: `flask`, `flask-sslify`.
+Для развертывания нужной среды можно использовать `pipenv`:
 ```bash
 # Генерируем самоподписные ключи
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
