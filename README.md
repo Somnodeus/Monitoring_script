@@ -4,7 +4,7 @@
 
 Скрипт monitoring.sh надо разместить в /usr/local/bin/monitoring.sh либо сделать на него симлинк.
 Далее Systemd сервис monitoring.service надо разместить в /etc/systemd/system/monitoring.service либо сделать на него симлинк.
-Скрипт запускается командой `sudo systemctl stop monitoring.service`.
+Скрипт запускается командой `sudo systemctl start monitoring.service`.
 
 Что делает скрипт:
 - Мониторит процесса test в среде linux
