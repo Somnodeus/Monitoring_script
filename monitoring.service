@@ -1,0 +1,11 @@
+# /etc/systemd/system/monitoring.service
+[Unit]
+Description=Monitoring Service for "test" process
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/monitoring.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
